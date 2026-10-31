@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المنفذ الصامت للمقاولات العامة | تنسيق المواقع وشبكات الري</title>
+<meta name="description" content="مؤسسة المنفذ الصامت للمقاولات العامة — تنسيق المواقع، الزراعة، تصميم وتنفيذ وصيانة شبكات الري الحديثة وأنظمة التحكم الذكية في المملكة العربية السعودية.">
+<meta property="og:title" content="المنفذ الصامت للمقاولات العامة">
+<meta property="og:description" content="تنسيق المواقع والزراعة وشبكات الري — من التصميم والتوريد حتى التنفيذ والصيانة.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<meta name="theme-color" content="#24221c">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink-900:#24221c; --ink-800:#2f2d26; --gold-500:#bd8d43; --gold-300:#dcbf8a; --gold-700:#8a6428;
+  --green-700:#284e2c; --green-600:#315b40; --green-100:#e3ebdf; --cream-100:#f5f0e7; --paper:#fffefa; --muted:#6b6457;
+  --display:"Cairo","IBM Plex Sans Arabic",sans-serif; --sans:"IBM Plex Sans Arabic",system-ui,sans-serif;
+  --wrap:1180px; --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink-900);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);line-height:1.25;font-weight:800}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:14px;color:var(--gold-700);letter-spacing:.3px}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.sec{padding:96px 0}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head h2{font-size:clamp(28px,4vw,40px);margin:10px 0 12px;color:var(--green-700)}
+.sec-head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;transition:transform .2s,background .2s,color .2s;border:2px solid transparent;cursor:pointer;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold-500);color:var(--ink-900)}
+.btn-gold:hover{background:var(--gold-300)}
+.btn-line{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-green{background:var(--green-700);color:#fff}
+.btn-green:hover{background:var(--green-600)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mk{width:52px;height:52px;background:var(--paper);border-radius:12px;display:grid;place-items:center;padding:5px;flex:none}
+.brand b{font-family:var(--display);font-size:19px;color:#fff;display:block;line-height:1.2}
+.brand small{font-size:12px;color:var(--gold-300);letter-spacing:.6px}
+.nav ul{display:flex;gap:28px;list-style:none}
+.nav ul a{color:rgba(255,255,255,.85);font-weight:500;font-size:15px}
+.nav ul a:hover{color:var(--gold-300)}
+.nav.scrolled{background:rgba(36,34,28,.94);backdrop-filter:blur(10px);box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.burger{display:none;background:none;border:0;color:#fff;cursor:pointer;padding:6px}
+.burger svg{width:28px;height:28px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--ink-900)}
+.hero-bg{position:absolute;inset:0;background:url(assets/img/hero.jpg) center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to left,rgba(36,34,28,.92) 0%,rgba(36,34,28,.72) 45%,rgba(36,34,28,.25) 100%),linear-gradient(to top,rgba(36,34,28,.9),transparent 45%)}
+.hero .wrap{position:relative;padding-top:140px;padding-bottom:56px;width:100%}
+.hero .eyebrow{color:var(--gold-300)}
+.hero h1{font-size:clamp(38px,6.4vw,74px);margin:18px 0 18px;max-width:780px}
+.hero h1 span{color:var(--gold-300)}
+.hero p.lead{font-size:clamp(17px,2vw,20px);max-width:580px;color:rgba(255,255,255,.85)}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.14);border-radius:var(--r);overflow:hidden;margin-top:64px;max-width:900px}
+.facts div{background:rgba(36,34,28,.72);backdrop-filter:blur(6px);padding:18px 20px}
+.facts b{font-family:var(--display);font-size:30px;color:var(--gold-300);display:block;line-height:1.2}
+.facts span{font-size:14px;color:rgba(255,255,255,.75)}
+
+/* about */
+.about{background:var(--cream-100)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.about-text p{margin-bottom:16px;color:#3d392f}
+.about-media{position:relative}
+.about-media > img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.about-media .logo-card{position:absolute;bottom:-28px;right:-28px;background:var(--paper);border-radius:var(--r);padding:18px;width:46%;box-shadow:0 18px 40px rgba(36,34,28,.18)}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.mv div{background:var(--paper);border-radius:var(--r);padding:22px;border-top:3px solid var(--gold-500)}
+.mv h3{font-size:19px;color:var(--green-700);margin-bottom:6px}
+.mv p{font-size:15px;color:var(--muted);margin:0}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{background:var(--paper);border:1px solid #e6dfd1;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
+.svc:hover{box-shadow:0 20px 40px rgba(36,34,28,.12);transform:translateY(-4px)}
+.svc .ph{aspect-ratio:16/10;overflow:hidden;position:relative}
+.svc .ph img{width:100%;height:100%;object-fit:cover}
+.svc .num{position:absolute;top:14px;right:14px;font-family:var(--display);font-weight:800;font-size:20px;background:var(--ink-900);color:var(--gold-300);width:48px;height:48px;border-radius:12px;display:grid;place-items:center}
+.svc .bd{padding:24px 24px 28px}
+.svc h3{font-size:22px;color:var(--green-700);margin-bottom:12px}
+.svc ul{list-style:none;display:grid;gap:8px}
+.svc li{display:flex;gap:10px;font-size:15.5px;color:#3d392f}
+.svc li::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--gold-500);margin-top:10px;flex:none;transform:rotate(45deg)}
+
+/* process */
+.process{background:var(--green-700);color:#fff}
+.process .sec-head h2{color:#fff}
+.process .sec-head p{color:rgba(255,255,255,.75)}
+.process .eyebrow{color:var(--gold-300)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;position:relative}
+.step{padding:0 0 0 24px;position:relative}
+.step .n{font-family:var(--display);font-weight:800;font-size:44px;color:var(--gold-300);line-height:1}
+.step .line{height:2px;background:rgba(255,255,255,.2);margin:18px 0 20px;position:relative}
+.step .line::before{content:"";position:absolute;right:0;top:-5px;width:12px;height:12px;border-radius:50%;background:var(--gold-500)}
+.step h3{font-size:21px;margin-bottom:6px}
+.step p{font-size:15px;color:rgba(255,255,255,.75)}
+
+/* features */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat{padding:28px;border-radius:var(--r);background:var(--cream-100)}
+.feat .ic{width:52px;height:52px;border-radius:14px;background:var(--green-700);display:grid;place-items:center;margin-bottom:16px}
+.feat .ic svg{width:26px;height:26px;stroke:var(--gold-300);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.feat h3{font-size:19px;color:var(--ink-900);margin-bottom:6px}
+.feat p{font-size:15px;color:var(--muted)}
+
+/* projects */
+.projects{background:var(--ink-900);color:#fff}
+.projects .sec-head h2{color:#fff}
+.projects .sec-head p{color:rgba(255,255,255,.7)}
+.projects .eyebrow{color:var(--gold-300)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
+.filters button{font-family:var(--sans);font-size:15px;font-weight:500;padding:9px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:none;color:#fff;cursor:pointer;transition:.2s}
+.filters button[aria-pressed=true]{background:var(--gold-500);border-color:var(--gold-500);color:var(--ink-900)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:250px;grid-auto-flow:dense;gap:18px}
+.pcard{position:relative;border-radius:var(--r);overflow:hidden;cursor:pointer;background:var(--ink-800);border:0;padding:0;text-align:right;color:#fff;font:inherit}
+.pcard img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.pcard:hover img{transform:scale(1.06)}
+.pcard .cap{position:absolute;inset:auto 0 0 0;padding:44px 20px 18px;background:linear-gradient(to top,rgba(20,19,15,.92),transparent)}
+.pcard .cap small{color:var(--gold-300);font-size:13px;font-weight:600}
+.pcard .cap b{display:block;font-family:var(--display);font-size:20px;line-height:1.3}
+.pcard .cnt{position:absolute;top:14px;left:14px;background:rgba(36,34,28,.75);backdrop-filter:blur(4px);font-size:13px;padding:4px 12px;border-radius:999px}
+.pcard.big{grid-column:span 2;grid-row:span 2}
+.pcard.wide{grid-column:span 2}
+.pcard.hide{display:none}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(15,14,11,.96);z-index:100;display:none;flex-direction:column}
+.lb.open{display:flex}
+.lb-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;color:#fff}
+.lb-top b{font-family:var(--display);font-size:20px}
+.lb-top span{color:var(--gold-300);font-size:14px;margin-inline-start:10px}
+.lb-main{flex:1;display:flex;align-items:center;justify-content:center;position:relative;min-height:0;padding:0 70px}
+.lb-main img{max-height:100%;max-width:100%;object-fit:contain;border-radius:8px}
+.lb button.x,.lb .arr{background:rgba(255,255,255,.1);border:0;color:#fff;width:48px;height:48px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.lb .arr{position:absolute;top:50%;transform:translateY(-50%)}
+.lb .arr.prev{right:12px}.lb .arr.next{left:12px}
+.lb svg{width:24px;height:24px}
+.lb-thumbs{display:flex;gap:8px;padding:14px 20px 20px;overflow-x:auto;justify-content:center}
+.lb-thumbs img{width:76px;height:56px;object-fit:cover;border-radius:6px;opacity:.45;cursor:pointer;flex:none}
+.lb-thumbs img.on{opacity:1;outline:2px solid var(--gold-500)}
+
+/* clients */
+.clients{background:var(--cream-100);padding:72px 0}
+.clients-row{display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+.clients-row h2{font-size:26px;color:var(--green-700);flex:none}
+.clist{display:flex;flex-wrap:wrap;gap:12px;flex:1}
+.clist span{background:var(--paper);border:1px solid #e3dac8;border-radius:999px;padding:10px 22px;font-family:var(--display);font-weight:700;font-size:16px;color:var(--ink-800)}
+
+/* quote */
+.quote{padding:96px 0;text-align:center}
+.quote p{font-family:var(--display);font-weight:700;font-size:clamp(24px,3.4vw,36px);color:var(--green-700);max-width:860px;margin:0 auto;line-height:1.5}
+.quote small{display:block;margin-top:16px;color:var(--gold-700);font-weight:600}
+
+/* contact */
+.contact{background:var(--ink-900);color:#fff}
+.contact .sec-head h2{color:#fff}
+.contact .sec-head p{color:rgba(255,255,255,.72)}
+.contact .eyebrow{color:var(--gold-300)}
+.c-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:start}
+.people{display:grid;gap:14px}
+.person{background:var(--ink-800);border-radius:var(--r);padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.person small{color:rgba(255,255,255,.65);font-size:14px;display:block}
+.person b{font-family:var(--display);font-size:19px}
+.person .ph{font-family:var(--display);font-weight:800;font-size:20px;color:var(--gold-300);direction:ltr;display:inline-block;margin-top:2px}
+.person .acts{display:flex;gap:8px}
+.ibtn{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.08);transition:.2s}
+.ibtn:hover{background:var(--gold-500);color:var(--ink-900)}
+.ibtn.wa{background:#1f7a3f}
+.ibtn.wa:hover{background:#25a454;color:#fff}
+.ibtn svg{width:22px;height:22px}
+.form{background:var(--paper);color:var(--ink-900);border-radius:var(--r);padding:30px}
+.form h3{font-size:22px;color:var(--green-700);margin-bottom:4px}
+.form > p{color:var(--muted);font-size:15px;margin-bottom:20px}
+.form label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .f{margin-bottom:14px}
+.form input,.form select,.form textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1px solid #d9d0bf;border-radius:10px;background:#fff;color:var(--ink-900)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--green-600);border-color:transparent}
+.form textarea{min-height:96px;resize:vertical}
+.form .btn{width:100%;margin-top:6px}
+
+footer{background:#1a1914;color:rgba(255,255,255,.6);padding:28px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.fab{position:fixed;bottom:22px;left:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25a454;color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.28);transition:transform .2s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:960px){
+  .nav ul{display:none;position:absolute;top:76px;inset-inline:0;flex-direction:column;gap:0;background:var(--ink-900);padding:8px 20px 20px}
+  .nav ul.open{display:flex}
+  .nav ul a{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+  .burger{display:block}
+  .nav .btn-gold.top{display:none}
+  .about-grid,.c-grid{grid-template-columns:1fr}
+  .about-media{max-width:460px}
+  .svc-grid,.feat-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:40px}
+  .pgrid{grid-template-columns:1fr 1fr;grid-auto-rows:220px}
+  .facts{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .sec{padding:72px 0}
+  .wrap{padding:0 16px}
+  .svc-grid,.feat-grid,.steps,.mv,.form .row{grid-template-columns:1fr}
+  .pgrid{grid-template-columns:1fr}
+  .pcard.big,.pcard.wide{grid-column:auto;grid-row:auto}
+  .about-media .logo-card{right:-8px;bottom:-20px}
+  .hero .btn{flex:1}
+  .lb-main{padding:0 8px}
+  .lb .arr{top:auto;bottom:-6px;transform:none}
+  .brand b{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="المنفذ الصامت — الرئيسية">
+      <span class="mk"><img src="assets/img/logo-mark.png" alt=""></span>
+      <span><b>المنفذ الصامت</b><small>SILENT EXECUTOR</small></span>
+    </a>
+    <ul id="menu">
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#why">مميزاتنا</a></li>
+      <li><a href="#projects">مشاريعنا</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+    <a class="btn btn-gold top" href="#contact">اطلب عرض سعر</a>
+    <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="ممشى منسق بالمسطحات الخضراء والزهور"></div>
+  <div class="wrap">
+    <span class="eyebrow">مؤسسة المنفذ الصامت للمقاولات العامة</span>
+    <h1>نعتني بالتفاصيل… <span>لتنمو المساحات</span> كما تتمنى</h1>
+    <p class="lead">تنسيق المواقع والزراعة وشبكات الري الحديثة — حلول متكاملة تبدأ من التصميم والتوريد، وصولًا إلى التنفيذ والصيانة، وفق أعلى المعايير المهنية.</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="https://wa.me/966550564367?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.3a8.2 8.2 0 1 1 6.97 3.83zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06a6.7 6.7 0 0 1-1.97-1.22 7.4 7.4 0 0 1-1.37-1.7c-.14-.25 0-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.24 3.74c.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29z"/></svg> استشارة عبر واتساب</a>
+      <a class="btn btn-line" href="#projects">شاهد مشاريعنا</a>
+    </div>
+    <div class="facts">
+      <div><b>+11</b><span>مشروع منفذ</span></div>
+      <div><b>3</b><span>مجالات تخصص</span></div>
+      <div><b>2</b><span>فرع: المدينة والشرقية</span></div>
+      <div><b>5</b><span>شركات مقاولات شريكة</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-text reveal">
+      <span class="eyebrow">من نحن</span>
+      <h2 style="font-size:clamp(28px,4vw,40px);color:var(--green-700);margin:10px 0 18px">شريك سعودي في تنسيق المواقع وشبكات الري</h2>
+      <p>مؤسسة المنفذ الصامت للمقاولات العامة مؤسسة سعودية تأسست في مدينة الدمام، متخصصة في أعمال تنسيق المواقع، والزراعة، وتنفيذ شبكات الري الحديثة.</p>
+      <p>نمتلك خبرة متميزة في توريد وزراعة الأشجار والشجيرات، وتنفيذ وربط شبكات الري بالشبكات الرئيسية بأحدث التقنيات، مع تصميم أنظمة ري دقيقة تعتمد على دراسة الاحتياج المائي لكل نبات — لتحقيق أعلى كفاءة وترشيد استهلاك المياه.</p>
+      <div class="mv">
+        <div><h3>رسالتنا</h3><p>خدمات متكاملة باحترافية وكفاءة، تعتمد على أحدث التقنيات، لضمان رضا العملاء واستدامة المشاريع وجودتها على المدى الطويل.</p></div>
+        <div><h3>رؤيتنا</h3><p>أن نكون من الجهات الرائدة في المقاولات وأعمال الري واللاندسكيب، بحلول مبتكرة وجودة تنفيذ تواكب تطلعات السوق.</p></div>
+      </div>
+    </div>
+    <div class="about-media reveal">
+      <img src="assets/img/projects/p02-01.jpg" alt="مشروع حديقة السكة حديد" loading="lazy">
+      <div class="logo-card"><img src="assets/img/logo.png" alt="شعار مؤسسة المنفذ الصامت للمقاولات العامة" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">خدماتنا</span>
+      <h2>كل ما تحتاجه مساحتك الخضراء تحت سقف واحد</h2>
+      <p>ثلاث خدمات رئيسية تغطي دورة المشروع بالكامل — من اختيار النبات المناسب للمناخ إلى تشغيل أنظمة التحكم الذكية.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="ph"><img src="assets/img/svc-landscape.jpg" alt="تنسيق حدائق ومسطحات خضراء" loading="lazy"><span class="num">01</span></div>
+        <div class="bd"><h3>الزراعة والتنسيق</h3>
+          <ul><li>توريد وزراعة الأشجار والشجيرات</li><li>تنسيق الحدائق والمسطحات الخضراء</li><li>تحسين التربة وتجهيز المواقع الزراعية</li><li>اختيار النباتات المناسبة للبيئة والمناخ</li></ul></div>
+      </article>
+      <article class="svc reveal">
+        <div class="ph"><img src="assets/img/svc-irrigation.jpg" alt="رشاشات ري تعمل على مسطح أخضر" loading="lazy"><span class="num">02</span></div>
+        <div class="bd"><h3>شبكات الري</h3>
+          <ul><li>تصميم وتنفيذ شبكات الري الحديثة</li><li>أنظمة الري بالتنقيط</li><li>أنظمة الببلرات والرشاشات</li><li>ربط شبكات الري بالشبكات الرئيسية</li><li>أنظمة ري حسب الاحتياج المائي للنبات</li></ul></div>
+      </article>
+      <article class="svc reveal">
+        <div class="ph"><img src="assets/img/svc-maintenance.jpg" alt="فني صيانة مسطحات خضراء" loading="lazy"><span class="num">03</span></div>
+        <div class="bd"><h3>الصيانة والتجهيزات</h3>
+          <ul><li>صيانة شبكات الري</li><li>صيانة المسطحات الخضراء</li><li>توريد معدات شبكات الري</li><li>أنظمة التحكم والكنترول الذكية</li><li>أعمال الأمن والسلامة في المشاريع</li></ul></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">منهجية العمل</span>
+      <h2>من فهم الاحتياج… إلى متابعة مستمرة</h2>
+      <p>منهجية مدروسة تضمن تنفيذًا متقنًا والتزامًا بالمواعيد في كل مشروع.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><div class="line"></div><h3>الدراسة والتصميم</h3><p>نفهم احتياج العميل والموقع، ونصمم النظام حسب الاحتياج المائي لكل نبات.</p></div>
+      <div class="step reveal"><div class="n">02</div><div class="line"></div><h3>التوريد</h3><p>توريد الأشجار والشجيرات ومعدات شبكات الري بمواصفات معتمدة.</p></div>
+      <div class="step reveal"><div class="n">03</div><div class="line"></div><h3>التنفيذ</h3><p>زراعة وتنسيق وتمديد وربط الشبكات وبرمجة وحدات التحكم.</p></div>
+      <div class="step reveal"><div class="n">04</div><div class="line"></div><h3>الصيانة والتشغيل</h3><p>متابعة مستمرة وصيانة دورية لضمان استدامة المشروع وكفاءته.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">مميزاتنا</span>
+      <h2>لماذا المنفذ الصامت؟</h2>
+      <p>نعمل بصمت… ونترك النتيجة تتحدث.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></div><h3>جودة التنفيذ</h3><p>نلتزم بأعلى المعايير الاحترافية لضمان نتائج دقيقة ومستدامة.</p></div>
+      <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><h3>التقنيات الحديثة</h3><p>أحدث أنظمة الري والتحكم الذكي لضمان الكفاءة والأداء العالي.</p></div>
+      <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg></div><h3>كفاءة استهلاك المياه</h3><p>أنظمة دقيقة مبنية على حساب الاحتياج المائي لكل نبات.</p></div>
+      <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 1 0-16 0"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg></div><h3>الحلول المتكاملة</h3><p>خدمات شاملة تبدأ من التصميم وتنتهي بالصيانة والتشغيل.</p></div>
+      <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21c-4-3-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-3 8-7 11z"/><path d="M12 14V8M9.5 10.5L12 8l2.5 2.5"/></svg></div><h3>الخبرة المتخصصة</h3><p>خبرة عملية في تنسيق الحدائق والمسطحات الخضراء بمختلف أنواعها.</p></div>
+      <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></div><h3>الالتزام بالمواعيد</h3><p>نحرص على إنجاز المشاريع في الوقت المحدد بكفاءة عالية.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec projects" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">معرض المشاريع</span>
+      <h2>أعمال على أرض الواقع</h2>
+      <p>حدائق وطرق وكورنيش وشبكات ري نفذناها في المدينة المنورة والمنطقة الشرقية. اضغط على أي مشروع لمشاهدة صوره.</p>
+    </div>
+    <div class="filters" role="group" aria-label="تصفية المشاريع">
+      <button aria-pressed="true" data-f="all">الكل</button>
+      <button aria-pressed="false" data-f="landscape">حدائق وتنسيق</button>
+      <button aria-pressed="false" data-f="roads">تنسيق الطرق</button>
+      <button aria-pressed="false" data-f="irrigation">ري وتحكم</button>
+    </div>
+    <div class="pgrid" id="pgrid"></div>
+  </div>
+</section>
+
+<section class="clients">
+  <div class="wrap clients-row reveal">
+    <h2>شركاء النجاح</h2>
+    <div class="clist">
+      <span>شركة اليمامة</span><span>شركة الفيصل</span><span>شركة يعرب للمقاولات العامة</span><span>شركة الفهد</span><span>شركة زومان الهاجري وشركاه</span>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap reveal">
+    <p>«ثقة عملائنا هي أساس نجاحنا… معًا نحو مشاريع أكثر كفاءة، وبيئة أكثر استدامة.»</p>
+    <small>— مؤسسة المنفذ الصامت للمقاولات العامة</small>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">تواصل معنا</span>
+      <h2>فريقنا جاهز لخدمتكم</h2>
+      <p>يسعدنا تواصلكم للإجابة على استفساراتكم وتقديم الاستشارات في تنسيق المواقع والزراعة وتنفيذ وصيانة شبكات الري.</p>
+    </div>
+    <div class="c-grid">
+      <div class="people reveal">
+        <div class="person"><div><small>الرئيس التنفيذي</small><b>عبدالعزيز اليامي</b><br><span class="ph">055 056 4367</span></div>
+          <div class="acts"><a class="ibtn" href="tel:+966550564367" aria-label="اتصال"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></a><a class="ibtn wa" href="https://wa.me/966550564367" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.3a8.2 8.2 0 1 1 6.97 3.83zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06a6.7 6.7 0 0 1-1.97-1.22 7.4 7.4 0 0 1-1.37-1.7c-.14-.25 0-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.24 3.74c.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29z"/></svg></a></div></div>
+        <div class="person"><div><small>مدير فرع المدينة المنورة</small><b>محمد العربي</b><br><span class="ph">058 102 0430</span></div>
+          <div class="acts"><a class="ibtn" href="tel:+966581020430" aria-label="اتصال"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></a><a class="ibtn wa" href="https://wa.me/966581020430" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.3a8.2 8.2 0 1 1 6.97 3.83zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06a6.7 6.7 0 0 1-1.97-1.22 7.4 7.4 0 0 1-1.37-1.7c-.14-.25 0-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.24 3.74c.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29z"/></svg></a></div></div>
+        <div class="person"><div><small>مدير فرع المنطقة الشرقية</small><b>أشرف عسكر</b><br><span class="ph">050 524 3285</span></div>
+          <div class="acts"><a class="ibtn" href="tel:+966505243285" aria-label="اتصال"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></a><a class="ibtn wa" href="https://wa.me/966505243285" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.3a8.2 8.2 0 1 1 6.97 3.83zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06a6.7 6.7 0 0 1-1.97-1.22 7.4 7.4 0 0 1-1.37-1.7c-.14-.25 0-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.24 3.74c.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29z"/></svg></a></div></div>
+      </div>
+      <form class="form reveal" id="qform">
+        <h3>اطلب عرض سعر</h3>
+        <p>اكتب تفاصيل مشروعك وسيتم إرسالها مباشرة عبر واتساب.</p>
+        <div class="row">
+          <div class="f"><label for="qn">الاسم</label><input id="qn" required autocomplete="name"></div>
+          <div class="f"><label for="qc">المدينة</label><input id="qc" placeholder="مثال: المدينة المنورة"></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="qs">الخدمة</label>
+            <select id="qs"><option>الزراعة والتنسيق</option><option>شبكات الري</option><option>الصيانة والتجهيزات</option><option>أنظمة التحكم الذكية</option><option>أخرى</option></select></div>
+          <div class="f"><label for="qb">الفرع</label>
+            <select id="qb"><option value="966550564367">الإدارة العامة</option><option value="966581020430">فرع المدينة المنورة</option><option value="966505243285">فرع المنطقة الشرقية</option></select></div>
+        </div>
+        <div class="f"><label for="qm">تفاصيل المشروع</label><textarea id="qm" placeholder="المساحة التقريبية، نوع الموقع، الموعد المتوقع…"></textarea></div>
+        <button class="btn btn-green" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.3a8.2 8.2 0 1 1 6.97 3.83zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06a6.7 6.7 0 0 1-1.97-1.22 7.4 7.4 0 0 1-1.37-1.7c-.14-.25 0-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.24 3.74c.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29z"/></svg> إرسال عبر واتساب</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> مؤسسة المنفذ الصامت للمقاولات العامة</span>
+    <span>تنسيق المواقع · الزراعة · شبكات الري · الصيانة</span>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/966550564367" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.8.83-3-.2-.3a8.2 8.2 0 1 1 6.97 3.83zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06a6.7 6.7 0 0 1-1.97-1.22 7.4 7.4 0 0 1-1.37-1.7c-.14-.25 0-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.24 3.74c.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29z"/></svg></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="صور المشروع">
+  <div class="lb-top"><div><b id="lbt"></b><span id="lbc"></span></div><button class="x" id="lbx" aria-label="إغلاق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="lb-main"><button class="arr prev" id="lbp" aria-label="السابق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button><img id="lbi" alt=""><button class="arr next" id="lbn" aria-label="التالي"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button></div>
+  <div class="lb-thumbs" id="lbth"></div>
+</div>
+
+<script>
+const P=[{"t": "حديقة القبلتين", "cat": "landscape", "img": ["assets/img/projects/p01-01.jpg", "assets/img/projects/p01-02.jpg", "assets/img/projects/p01-03.jpg", "assets/img/projects/p01-04.jpg"]}, {"t": "حديقة السكة حديد", "cat": "landscape", "img": ["assets/img/projects/p02-01.jpg", "assets/img/projects/p02-02.jpg", "assets/img/projects/p02-03.jpg", "assets/img/projects/p02-04.jpg", "assets/img/projects/p02-05.jpg"]}, {"t": "مواقف القبلتين", "cat": "landscape", "img": ["assets/img/projects/p03-01.jpg", "assets/img/projects/p03-02.jpg", "assets/img/projects/p03-03.jpg", "assets/img/projects/p03-04.jpg"]}, {"t": "طريق قباء", "cat": "roads", "img": ["assets/img/projects/p04-01.jpg", "assets/img/projects/p04-02.jpg", "assets/img/projects/p04-03.jpg", "assets/img/projects/p04-04.jpg"]}, {"t": "كورنيش الخبر", "cat": "landscape", "img": ["assets/img/projects/p05-01.jpg", "assets/img/projects/p05-02.jpg", "assets/img/projects/p05-03.jpg", "assets/img/projects/p05-04.jpg", "assets/img/projects/p05-05.jpg", "assets/img/projects/p05-06.jpg", "assets/img/projects/p05-07.jpg", "assets/img/projects/p05-08.jpg", "assets/img/projects/p05-09.jpg", "assets/img/projects/p05-10.jpg", "assets/img/projects/p05-11.jpg", "assets/img/projects/p05-12.jpg"]}, {"t": "حديقة العزيزية", "cat": "landscape", "img": ["assets/img/projects/p06-01.jpg", "assets/img/projects/p06-02.jpg", "assets/img/projects/p06-03.jpg", "assets/img/projects/p06-04.jpg"]}, {"t": "تركيب وبرمجة وحدة كنترول", "cat": "irrigation", "img": ["assets/img/projects/p07-01.jpg", "assets/img/projects/p07-02.jpg", "assets/img/projects/p07-03.jpg"]}, {"t": "أعمال الري والتمديد", "cat": "irrigation", "img": ["assets/img/projects/p08-01.jpg", "assets/img/projects/p08-02.jpg", "assets/img/projects/p08-03.jpg", "assets/img/projects/p08-04.jpg", "assets/img/projects/p08-05.jpg"]}, {"t": "طريق خالد بن عدي", "cat": "roads", "img": ["assets/img/projects/p09-01.jpg", "assets/img/projects/p09-02.jpg", "assets/img/projects/p09-03.jpg", "assets/img/projects/p09-04.jpg"]}, {"t": "طريق سعيد بن العاص", "cat": "roads", "img": ["assets/img/projects/p10-01.jpg", "assets/img/projects/p10-02.jpg", "assets/img/projects/p10-03.jpg", "assets/img/projects/p10-04.jpg", "assets/img/projects/p10-05.jpg", "assets/img/projects/p10-06.jpg"]}, {"t": "طريق خالد بن الوليد", "cat": "roads", "img": ["assets/img/projects/p11-01.jpg", "assets/img/projects/p11-02.jpg"]}];
+const CAT={landscape:"حدائق وتنسيق",roads:"تنسيق الطرق",irrigation:"ري وتحكم"};
+const g=document.getElementById('pgrid');
+P.forEach((p,i)=>{
+  const b=document.createElement('button');
+  b.className='pcard reveal'+(i===4?' big':'')+(i===7?' wide':'');b.dataset.cat=p.cat;
+  b.innerHTML=`<img src="${p.img[0]}" alt="${p.t}" loading="lazy"><span class="cnt">${p.img.length} صور</span><div class="cap"><small>${CAT[p.cat]}</small><b>${p.t}</b></div>`;
+  b.onclick=()=>openLb(i,0);g.appendChild(b);
+});
+document.querySelectorAll('.filters button').forEach(btn=>btn.onclick=()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===btn));
+  const f=btn.dataset.f;
+  g.querySelectorAll('.pcard').forEach(c=>{c.classList.toggle('hide',f!=='all'&&c.dataset.cat!==f);c.classList.toggle('big',f==='all'&&c===g.children[4]);c.classList.toggle('wide',f==='all'&&c===g.children[7]);});
+});
+// lightbox
+const lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),th=document.getElementById('lbth');let cp=0,ci=0;
+function openLb(p,i){cp=p;th.innerHTML='';P[p].img.forEach((s,k)=>{const t=new Image();t.src=s;t.alt='';t.onclick=()=>show(k);th.appendChild(t)});
+  document.getElementById('lbt').textContent=P[p].t;show(i);lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbx').focus();}
+function show(i){const n=P[cp].img.length;ci=(i+n)%n;lbi.src=P[cp].img[ci];lbi.alt=P[cp].t;
+  document.getElementById('lbc').textContent=(ci+1)+' / '+n;[...th.children].forEach((t,k)=>t.classList.toggle('on',k===ci));}
+function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
+document.getElementById('lbx').onclick=closeLb;
+document.getElementById('lbn').onclick=()=>show(ci+1);document.getElementById('lbp').onclick=()=>show(ci-1);
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('lb-main'))closeLb()});
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')show(ci+1);if(e.key==='ArrowRight')show(ci-1);});
+let sx=0;lbi.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+lbi.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>40)show(ci+(d>0?1:-1));});
+// nav
+const nav=document.getElementById('nav'),menu=document.getElementById('menu'),bg=document.getElementById('burger');
+const onS=()=>nav.classList.toggle('scrolled',scrollY>40||menu.classList.contains('open'));addEventListener('scroll',onS,{passive:true});onS();
+bg.onclick=()=>{const o=menu.classList.toggle('open');bg.setAttribute('aria-expanded',o);onS();};
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>{menu.classList.remove('open');bg.setAttribute('aria-expanded',false);onS();});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// form -> whatsapp
+document.getElementById('qform').onsubmit=e=>{e.preventDefault();const v=id=>document.getElementById(id).value.trim();
+  const msg=`السلام عليكم، طلب عرض سعر من الموقع:\nالاسم: ${v('qn')}\nالمدينة: ${v('qc')||'-'}\nالخدمة: ${v('qs')}\nالتفاصيل: ${v('qm')||'-'}`;
+  window.open('https://wa.me/'+v('qb')+'?text='+encodeURIComponent(msg),'_blank','noopener');};
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
