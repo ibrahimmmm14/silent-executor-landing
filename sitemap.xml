@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://silent-executor.netlify.app/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p01-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p02-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p03-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p04-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p05-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p06-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p07-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p08-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p09-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p10-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://silent-executor.netlify.app/assets/img/projects/p11-01.jpg</image:loc></image:image>
+  </url>
+</urlset>
