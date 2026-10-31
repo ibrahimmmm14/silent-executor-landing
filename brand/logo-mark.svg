@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 208" width="1680" height="2080">
+  <title>المنفذ الصامت — شعار</title>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8bc6c"/>
+      <stop offset=".45" stop-color="#cf9a4a"/>
+      <stop offset="1" stop-color="#ac772d"/>
+    </linearGradient>
+    <linearGradient id="goldSide" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b9843a"/>
+      <stop offset="1" stop-color="#d6a456"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a5530"/>
+      <stop offset="1" stop-color="#22351c"/>
+    </linearGradient>
+  </defs>
+  <!-- green letter -->
+  <path fill="url(#green)" d="M70 88 L42 114 L42 183 L32 183 L22 173 L22 125 L4 141 L4 185 L20 201 L60 201 L60 120 L70 108 Z"/>
+  <!-- green side face under the main column -->
+  <path fill="#1a2915" d="M69 134 L77 152 L77 201 L69 201 Z"/>
+  <!-- main gold column with arm -->
+  <path fill="url(#gold)" d="M70 2 L92 22 L92 190 L77 199 L77 153 L69 135 L69 123 L77 114 L77 69 L42 100 L42 82 L70 56 Z"/>
+  <!-- second gold column with roof -->
+  <path fill="url(#gold)" d="M100 35 L116 50 L116 78 L166 120 L166 181 L150 191 L150 125 L116 98 L116 194 L100 204 Z"/>
+  <!-- inner gold column -->
+  <path fill="url(#goldSide)" d="M125 123 L141 136 L141 192 L125 201 Z"/>
+</svg>
